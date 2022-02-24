@@ -9,7 +9,6 @@ from rest_framework import status
 from app.models import Todo
 from app.serializers import TodoSerializer
 
-# Create your views here.
 
 class TodoListandCreate(APIView):
 
