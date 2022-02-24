@@ -52,5 +52,3 @@ class TodoListUpdateandDelete(APIView):
         todo = self.get_object(pk)
         todo.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-
