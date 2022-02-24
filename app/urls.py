@@ -1,8 +1,8 @@
 from django.urls import path
 
-from app.views import mostra_lista, edita_apaga_lista
+from app.views import TodoListandCreate, TodoListUpdateandDelete
 
 urlpatterns = [
-    path('', mostra_lista),
-    path('<int:pk>/', edita_apaga_lista)
+    path('', TodoListandCreate.as_view()),
+    path('<int:pk>/', TodoListUpdateandDelete.as_view())
 ]
